@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>asa-building-books</artifactId>
+        <groupId>com.asa.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-cloud-micro-serivce-all-stack</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>chapter1</module>
+        <module>chapter2</module>
+        <module>chapter3</module>
+        <module>chapter4</module>
+        <module>chapter5</module>
+        <module>common-domain</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>1.4.7.RELEASE</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-okhttp -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-okhttp</artifactId>
+                <version>10.4.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-httpclient -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>10.4.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-jackson -->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-jackson</artifactId>
+                <version>10.4.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
