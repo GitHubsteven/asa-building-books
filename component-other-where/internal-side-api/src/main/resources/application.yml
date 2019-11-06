@@ -1,0 +1,6 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: out_side_api_app
