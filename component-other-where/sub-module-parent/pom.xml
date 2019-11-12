@@ -11,6 +11,8 @@
     <modules>
         <module>sub-module-service</module>
         <module>sub-module-bean</module>
+        <module>sub-module-api</module>
+        <module>sub-module-api-impl</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

@@ -22,6 +22,8 @@ public class OutSideController {
 
     @GetMapping("/api1")
     public String api1() {
-        return "outside api1" + "from service result: " + iApiService.api();
+        return "outside api1" + "from service result: "
+                + iApiService.api()
+                + iApiService.testApi("asa.x");
     }
 }

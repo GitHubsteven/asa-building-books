@@ -7,5 +7,11 @@ package pers.demo.asa.out.api.service;
  * @Date: Created at 18:15 2019/10/30.
  */
 public interface IApiService {
-    public String api();
+    String api();
+
+    /**
+     * @param name 名字
+     * @return 结果
+     */
+    String testApi(String name);
 }
